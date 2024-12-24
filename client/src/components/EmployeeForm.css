@@ -1,0 +1,105 @@
+/* General form container styling */
+.employee-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.employee-form div {
+    margin-bottom: 15px;
+}
+
+.employee-form label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.employee-form input,
+.employee-form select {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+.employee-form input:focus,
+.employee-form select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.employee-form button {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.employee-form button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.employee-form button:active {
+    background-color: #003d80;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.employee-form .error {
+    color: #d9534f;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.employee-form .success {
+    color: #5cb85c;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Reset button styling */
+.employee-form button[type="reset"] {
+    background-color: #6c757d;
+}
+
+.employee-form button[type="reset"]:hover {
+    background-color: #5a6268;
+}
+
+.employee-form button[type="reset"]:active {
+    background-color: #495057;
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 600px) {
+    .employee-form {
+        padding: 15px;
+    }
+
+    .employee-form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .employee-form button:last-child {
+        margin-right: 0;
+    }
+}
